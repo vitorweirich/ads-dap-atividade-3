@@ -1,3 +1,4 @@
+from datetime import date
 from django.shortcuts import render
 from django.views.generic import (
     CreateView, ListView, UpdateView, DetailView, DeleteView
@@ -36,6 +37,22 @@ class FuncionarioDetailView(DetailView):
     model = Funcionario
     template_name = "lista_funcionario.html"
     context_object_name = "fun"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        print(context)
+
+        funcionario = context['object']
+        idade = self.calcular_idade(funcionario.data_nascimento)
+        funcionario.nascimento_idade = f"{funcionario.data_nascimento.strftime('%d/%m/%Y')} - {idade} anos"
+        
+        return context
+
+    def calcular_idade(self, data_nascimento):
+        hoje = date.today()
+        idade = hoje.year - data_nascimento.year
+        if hoje.month < data_nascimento.month or (hoje.month == data_nascimento.month and hoje.day < data_nascimento.day):
+            idade -= 1
+        return idade
 
 class FuncionarioDeleteView(DeleteView):
     model = Funcionario
