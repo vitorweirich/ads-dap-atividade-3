@@ -43,19 +43,15 @@ class ExportFuncionarioCSV(APIView):
         }
     )
     def get(self, request, *args, **kwargs):
-        # Cria uma resposta com tipo de conteúdo CSV
         resonse_file_name = request.GET.get('file_name', 'funcionarios.csv')
 
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = f'attachment; filename="{resonse_file_name}"'
         
-        # Cria o escritor CSV
         writer = csv.writer(response)
         
-        # Cabeçalho do CSV
         writer.writerow(['ID', 'Nome', 'Data de Nascimento', 'Email', 'Profissão'])
         
-        # Dados dos funcionários
         funcionarios = Funcionario.objects.all()
         
         for funcionario in funcionarios:

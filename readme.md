@@ -13,7 +13,7 @@ Este repositório contém um projeto desenvolvido em Django, com as seguintes ca
 - **Framework:** Django (Python)
 - **Estilização:** Bootstrap
 - **Banco de Dados:** MySQL
-- **Funcionalidades:** CRUD básico de funcionários
+- **Funcionalidades:** CRUD básico de funcionários em um WebApp(site), listagem e exportação de funcionarios existentes e documentação em OpenAPI dos rest endpoints existentes
 
 Além disso, foi gravado um vídeo com um _overview_ do projeto e demonstrações de suas funcionalidades. O vídeo está disponível no [YouTube](https://youtube.com/TODO).
 
@@ -28,6 +28,13 @@ Antes de rodar o projeto, certifique-se de ter os seguintes requisitos instalado
   - Caso prefira, você pode instalar o MySQL localmente ou alterar a configuração para usar o SQLite como banco de dados.
 - **pip** (para gerenciar as dependências do Python)
 - **virtualenv** (para criar um ambiente virtual para instalar as dependências)
+
+---
+
+### Recursos
+
+- [WebApp(Site)](http://localhost:8000/app/lista_funcionarios)
+- [RestAPIs](http://localhost:8000/app/api/docs)
 
 ---
 
@@ -68,9 +75,4 @@ Siga os passos abaixo para rodar o projeto:
    ```bash
    python manage.py loaddata funcionarios.json
    ```
-9. **(Opcional) Visualizar as apis:** Acesse http://localhost:8000/app/api/funcionarios/
-
-### Recursos
-
-- [WebApp(Site)](http://localhost:8000/app/lista_funcionarios)
-- [RestAPIs](http://localhost:8000/app/api/funcionarios/)
+9. **(Opcional) Visualizar as apis:** Acesse http://localhost:8000/app/api/docs
