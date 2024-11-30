@@ -1,0 +1,92 @@
+[
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "João Silva",
+      "data_nascimento": "1980-04-15",
+      "email": "joao@exemplo.com",
+      "profissao": "Desenvolvedor"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Maria Oliveira",
+      "data_nascimento": "1990-07-20",
+      "email": "maria@exemplo.com",
+      "profissao": "Analista"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Pedro Santos",
+      "data_nascimento": "1985-11-10",
+      "email": "pedro@exemplo.com",
+      "profissao": "Gerente"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Ana Costa",
+      "data_nascimento": "1987-02-05",
+      "email": "ana@exemplo.com",
+      "profissao": "Designer"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Carlos Pereira",
+      "data_nascimento": "1992-09-12",
+      "email": "carlos@exemplo.com",
+      "profissao": "Analista"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Luciana Gomes",
+      "data_nascimento": "1983-06-25",
+      "email": "luciana@exemplo.com",
+      "profissao": "Desenvolvedor"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Ricardo Almeida",
+      "data_nascimento": "1978-11-30",
+      "email": "ricardo@exemplo.com",
+      "profissao": "Gerente"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Fernanda Souza",
+      "data_nascimento": "1995-03-10",
+      "email": "fernanda@exemplo.com",
+      "profissao": "Assistente"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Roberto Lima",
+      "data_nascimento": "1981-12-22",
+      "email": "roberto@exemplo.com",
+      "profissao": "Coordenador"
+    }
+  },
+  {
+    "model": "app.funcionario",
+    "fields": {
+      "nome": "Patrícia Martins",
+      "data_nascimento": "1994-01-13",
+      "email": "patricia@exemplo.com",
+      "profissao": "Consultora"
+    }
+  }
+]

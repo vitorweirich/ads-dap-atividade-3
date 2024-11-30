@@ -30,6 +30,7 @@ class FuncionarioUpdateView(UpdateView):
 class FuncionarioListView(ListView):
     model = Funcionario
     template_name = "lista_funcionarios.html"
+    ordering = ['nome']
 
 class FuncionarioDetailView(DetailView):
     model = Funcionario
