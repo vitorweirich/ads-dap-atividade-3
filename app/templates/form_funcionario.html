@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Funcionários</title>
     {% bootstrap_css %} {% bootstrap_javascript%}
+    <style type="text/css">
+      html {
+        margin: 2%;
+      }
+    </style>
   </head>
   <body>
-    <form method="post">
+    <form id="funcionario_form" method="post">
       {% csrf_token %} {% bootstrap_form form %}
       <button
         type="button"
@@ -17,7 +22,33 @@
       >
         Voltar para Lista de Funcionários
       </button>
-      <input type="submit" class="btn btn-primary" value="Cadastrar" />
+      <input
+        id="funcionario_submit"
+        type="submit"
+        class="btn btn-primary"
+        value="{{ botao_texto }}"
+        disabled
+      />
     </form>
   </body>
+
+  <script>
+    const form = document.getElementById("funcionario_form");
+    const submitBtn = document.getElementById("funcionario_submit");
+
+    form.addEventListener("input", function () {
+      let formChanged = false;
+
+      for (let element of form.elements) {
+        if (element.type !== "submit" && element.type !== "button") {
+          if (element.value !== element.defaultValue) {
+            formChanged = true;
+            break;
+          }
+        }
+      }
+
+      submitBtn.disabled = !formChanged;
+    });
+  </script>
 </html>
