@@ -61,6 +61,6 @@ Siga os passos abaixo para rodar o projeto:
    ```
 6. **Inicie o servidor de desenvolvimento do Django:**
    ```bash
-   python manage.py migrate
+   python manage.py runserver
    ```
 7. **Acesse o projeto no navegador:** Abra http://localhost:8000/app/lista_funcionarios
