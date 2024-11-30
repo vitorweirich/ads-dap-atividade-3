@@ -68,3 +68,9 @@ Siga os passos abaixo para rodar o projeto:
    ```bash
    python manage.py loaddata funcionarios.json
    ```
+9. **(Opcional) Visualizar as apis:** Acesse http://localhost:8000/app/api/funcionarios/
+
+### Recursos
+
+- [WebApp(Site)](http://localhost:8000/app/lista_funcionarios)
+- [RestAPIs](http://localhost:8000/app/api/funcionarios/)
