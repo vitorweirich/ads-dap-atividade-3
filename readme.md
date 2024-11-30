@@ -15,7 +15,7 @@ Este repositório contém um projeto desenvolvido em Django, com as seguintes ca
 - **Banco de Dados:** MySQL
 - **Funcionalidades:** CRUD básico de funcionários em um WebApp(site), listagem e exportação de funcionarios existentes e documentação em OpenAPI dos rest endpoints existentes
 
-Além disso, foi gravado um vídeo com um _overview_ do projeto e demonstrações de suas funcionalidades. O vídeo está disponível no [YouTube](https://youtube.com/TODO).
+Além disso, foi gravado um vídeo com um _overview_ do projeto e demonstrações de suas funcionalidades. O vídeo está disponível no [YouTube](https://youtu.be/XrRRVI-y9UQ).
 
 ---
 
