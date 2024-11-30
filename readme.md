@@ -64,3 +64,7 @@ Siga os passos abaixo para rodar o projeto:
    python manage.py runserver
    ```
 7. **Acesse o projeto no navegador:** Abra http://localhost:8000/app/lista_funcionarios
+8. **(Opcional) Adicionar funcionarios no banco para testes:**
+   ```bash
+   python manage.py loaddata funcionarios.json
+   ```
